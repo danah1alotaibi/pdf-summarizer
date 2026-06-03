@@ -18,7 +18,7 @@ export default function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/upload-pdf", {
+      const response = await fetch("https://pdf-summarizer-api-0dlb.onrender.com/upload-pdf", {
         method: "POST",
         body: formData,
       });
